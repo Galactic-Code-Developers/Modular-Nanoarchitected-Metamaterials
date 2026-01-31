@@ -1,0 +1,29 @@
+{
+  "title": "Modular Nanoarchitected Metamaterials \u2014 CAD, Print, and Asset Bundle (No Manuscript)",
+  "upload_type": "software",
+  "description": "Release bundle containing CAD/print files, images, and reproducibility manifest for the Modular Nanoarchitected Metamaterials project. Manuscript content is intentionally excluded.",
+  "creators": [
+    {
+      "name": "Valamontes, Antonios",
+      "affiliation": "Kapodistrian Academy of Science"
+    }
+  ],
+  "license": "CC-BY-NC-4.0",
+  "keywords": [
+    "metamaterials",
+    "nanoarchitected",
+    "gyroid",
+    "TPMS",
+    "additive manufacturing",
+    "STL",
+    "3MF",
+    "FEM"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Galactic-Code-Developers/Modular-NM",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

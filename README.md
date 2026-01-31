@@ -1,72 +1,39 @@
-# Modular Nanoarchitected Metamaterials
+# Modular-NM — Release Assets (No Manuscript)
 
-This repository contains all 3D printable geometries, CAD assets, stress simulation figures, and print specification data associated with the paper:
+This repository release contains **only non-manuscript artifacts** referenced by the Modular Nanoarchitected Metamaterials project:
 
-**"Modular Nanoarchitected Metamaterials: CAD-Defined Gyroid and Hybrid Lattices for Scalable Lightweight Structural Systems"**  
-_Antonios Valamontes, Kapodistrian Academy of Science_
+- CAD and manufacturing files (STL/OBJ/STEP/3MF)
+- Simulation artifacts (if present)
+- Figures used for the published PDF (PNG)
+- A SHA256 manifest for reproducibility
+- Zenodo metadata files for DOI minting
 
----
+## Folder layout
 
-## 📁 Repository Contents
+- `cad/` — STL/OBJ/STEP/3MF manufacturing and geometry assets
+- `simulations/` — solver models and input decks (`.mph`, `.inp`) when available
+- `images/` — figures (PNG) used in the published PDF
+- `zenodo/` — Zenodo metadata helpers
 
-### 🔷 Unit Cell Geometry
+## Important note about stub files
 
-- `gyroid_unit_cell_fixed.stl` — STL mesh of gyroid unit cell  
-- `gyroid_unit_cell_fixed.obj` — OBJ mesh of gyroid unit cell  
-- `gyroid_unit_cell.png` — Visualization of gyroid point cloud  
+Some filenames are included as **stubs** (plain-text placeholders) to preserve the *exact* file references used in the project.
+Stubs contain the message `NOT INCLUDED IN THIS RELEASE`.
 
-### 🔷 Visualizations & Stress Maps
+If you see a stub, replace it with the corresponding real artifact before manufacturing, simulation, or third-party sharing.
 
-- `hybrid_lattice.png` — Hybrid gyroid-diamond lattice structure  
-- `stress_cross_section.png` — FEM stress contour (mid-plane)  
-- `fem_stress_image_1.png` — Static pressure FEM response  
-- `fem_stress_image_2.png` — Blast impulse simulation  
-- `fem_stress_image_3.png` — Vibration mode simulation  
+## Reproducibility
 
-### 🔷 Printable Panel Files by Appendix
+- `SHA256SUMS.txt` lists hashes for every file in this release (including stubs).
+- For validation: compute SHA256 locally and compare to the manifest.
 
-| Appendix | Description                             | File Name                                |
-|----------|-----------------------------------------|-------------------------------------------|
-| A        | Curved PETG gyroid panel                | `curved_gyroid_panel_petg.stl`           |
-| B        | Miniature gyroid SLA shell              | `miniature_gyroid_shell_sla.stl`         |
-| C        | Aerospace CF-PEEK + TiN layered shell   | `aerospace_layered_shell_cfpeek_tin.stl` |
-| D        | High-impact Kevlar/Nylon12 shield       | `high_impact_shield_nylon12_kevlar.stl`  |
-| E        | Consumer flat shell with gyroid infill  | `consumer_grade_shell_flat.stl`          |
-| F        | Dual-material hybrid sensor shell       | `hybrid_sensor_shell.stl`                |
-| G        | Gyroid-laminated drone wing panel       | `gyroid_laminated_drone_wing.stl`        |
-| H        | Curved gyroid blast shield              | `curved_gyroid_laminated_blast_shield.stl` |
-| I        | Modular spacecraft lattice tile         | `modular_space_panel_tile.stl`           |
-| J        | Satellite heat dissipation tile         | `heat_dissipation_tile_satellite.stl`    |
-| K        | Stress test coupon (environmental)      | `environmental_stress_test_coupon.stl`   |
+## Zenodo / DOI
 
----
+1. Create a Zenodo upload (new version or new record).
+2. Upload the **zip** produced from this repository release.
+3. Paste metadata from `.zenodo.json` (or let Zenodo read it if supported).
+4. Mint the DOI and update your published PDF to reference the DOI.
 
-## 🔧 Printing and Slicing Profiles
+## License
 
-- FDM: Compatible with Prusa MK4, Bambu X1  
-- SLA: Compatible with Anycubic Photon, Formlabs  
-- Hybrid toolpath & material profiles available in `/slicer_profiles/` (forthcoming)
-
----
-
-## 📜 License
-
-This work is licensed under:  
-**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**
-
-For commercial fabrication or integration into proprietary systems, contact the author for licensing terms.
-
----
-
-## 🔖 Citation
-
-Valamontes, A. (2026). *Modular Nanoarchitected Metamaterials: CAD-Defined Gyroid and Hybrid Lattices for Scalable Lightweight Structural Systems*. Kapodistrian Academy of Science.  
-DOI to be issued via Zenodo upon deposit.
-
----
-
-## 🧑‍🔬 Author
-
-Antonios Valamontes  
-Kapodistrian Academy of Science  
-[zenodo.org/antonios-valamontes](https://zenodo.org/)
+CC BY-NC 4.0 (see `LICENSE`). Commercial use requires a separate license from the author.

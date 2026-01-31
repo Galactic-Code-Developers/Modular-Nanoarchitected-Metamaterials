@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these assets, please cite as below."
+title: "Modular Nanoarchitected Metamaterials — CAD & Manufacturing Assets"
+authors:
+  - family-names: "Valamontes"
+    given-names: "Antonios"
+    affiliation: "Kapodistrian Academy of Science"
+year: 2026
+license: "CC-BY-NC-4.0"
+repository-code: "https://github.com/Galactic-Code-Developers/Modular-NM"
