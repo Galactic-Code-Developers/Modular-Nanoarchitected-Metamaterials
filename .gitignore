@@ -1,0 +1,84 @@
+# ----------------------------------------
+# OS / Editor noise
+# ----------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+
+# ----------------------------------------
+# LaTeX / manuscript artifacts (DO NOT TRACK)
+# ----------------------------------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.pdf
+
+# ----------------------------------------
+# Build / export directories
+# ----------------------------------------
+build/
+dist/
+out/
+tmp/
+
+# ----------------------------------------
+# Simulation caches (COMSOL / ABAQUS / etc.)
+# ----------------------------------------
+*.mph~
+*.lck
+*.odb
+*.sim
+*.sta
+*.msg
+*.dat
+*.prt
+*.com
+
+# ----------------------------------------
+# Large intermediate mesh / cache files
+# (keep final STL/OBJ/STEP only)
+# ----------------------------------------
+*.mesh
+*.vtk
+*.vtu
+*.ply
+
+# ----------------------------------------
+# Python / analysis noise (if any scripts exist)
+# ----------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env/
+
+# ----------------------------------------
+# ZIP safety (prevent accidental re-adding)
+# ----------------------------------------
+*.zip
+
+# ----------------------------------------
+# Security / private material
+# ----------------------------------------
+*.key
+*.pem
+*.secret
+*.token
